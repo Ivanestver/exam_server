@@ -24,7 +24,7 @@ func AllMessagesHandler(writer http.ResponseWriter, req *http.Request) {
 		return
 	}
 
-	if true || db.CheckUser(login) {
+	if db.CheckUser(login) {
 		allMessages := db.GetAllMessages()
 		var response _AllMessagesResponse
 		response.Messages = make([]structs.Message, len(allMessages))
