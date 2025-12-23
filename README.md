@@ -11,21 +11,21 @@
   * Метод: POST
   * login: Логин **зарегистрированного** и **авторизированного** пользователя.
   * time: Дата и время в формате "ГГГ-ММ-ДД чч:мм:сс". 
-  * : {"login": "user_login", "time": "2025-01-01 01:02:03"}
+  * Пример: {"login": "user_login", "time": "2025-01-01 01:02:03"}
 * /sign-in: Авторизироваться на сервере.
   * Метод: POST
   * name: Имя пользователя.
   * login: Логин **зарегистрированного** пользователя.
   * password: Пароль.
-  * : {"name": "user_name","login": "user_login", "password": "user_password"}
+  * Пример: {"name": "user_name","login": "user_login", "password": "user_password"}
 * /sign-up:
   * Метод: POST
   * name: Имя пользователя.
   * login: Логин пользователя.
   * password: Пароль.
-  * : {"name": "user_name","login": "user_login", "password": "user_password"}
+  * Пример: {"name": "user_name","login": "user_login", "password": "user_password"}
 * /send-message: Отправить сообщение на сервер.
   * Метод: POST
   * owner: Логин **зарегистрированного** и **авторизированного** пользователя.
   * text:
-  * : {"owner": "user_login","text": "Some message"}
+  * Пример: {"owner": "user_login","text": "Some message"}
