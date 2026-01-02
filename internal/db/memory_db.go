@@ -27,7 +27,7 @@ func (memoryDB *_MemoryDB) GetAllMessages() []*structs.Message {
 func (memoryDB *_MemoryDB) GetAllMessagesAfterTime(time time.Time) []*structs.Message {
 	messages := make([]*structs.Message, 0)
 	for _, m := range memoryDB.messages {
-		if m.GetTimeAsTime().Compare(time) >= 0 {
+		if m.GetTimeAsTime().Compare(time) > 0 {
 			messages = append(messages, &structs.Message{
 				IncomingMessage: structs.IncomingMessage{
 					Owner: m.Owner,
